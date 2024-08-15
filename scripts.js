@@ -31,7 +31,15 @@ function moveItemsOnClick(type){
     container.classList.remove('back')
  }, 3000);
 
-
-
-
 }
+
+function menuShow() {
+    let menuMobile = document.querySelector('.mobile-menu');
+    if (menuMobile.classList.contains('open')){
+        menuMobile.classList.remove('open');
+
+    } else{
+        menuMobile.classList.add('open');
+    }
+}
+
